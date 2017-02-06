@@ -1,0 +1,12 @@
+C:\Users\Yahor_Staravoitau\documents\visual studio 2015\Projects\LWWTest\LWWTest\bin\Debug\LWWTest.dll
+C:\Users\Yahor_Staravoitau\documents\visual studio 2015\Projects\LWWTest\LWWTest\bin\Debug\LWWTest.pdb
+C:\Users\Yahor_Staravoitau\documents\visual studio 2015\Projects\LWWTest\LWWTest\bin\Debug\WebDriver.dll
+C:\Users\Yahor_Staravoitau\documents\visual studio 2015\Projects\LWWTest\LWWTest\bin\Debug\WebDriver.xml
+C:\Users\Yahor_Staravoitau\documents\visual studio 2015\Projects\LWWTest\LWWTest\obj\Debug\LWWTest.csproj.ResolveComReference.cache
+C:\Users\Yahor_Staravoitau\documents\visual studio 2015\Projects\LWWTest\LWWTest\obj\Debug\LWWTest.Data.resources
+C:\Users\Yahor_Staravoitau\documents\visual studio 2015\Projects\LWWTest\LWWTest\obj\Debug\LWWTest.csproj.GenerateResource.Cache
+C:\Users\Yahor_Staravoitau\documents\visual studio 2015\Projects\LWWTest\LWWTest\obj\Debug\LWWTest.dll
+C:\Users\Yahor_Staravoitau\documents\visual studio 2015\Projects\LWWTest\LWWTest\obj\Debug\LWWTest.pdb
+C:\Users\Yahor_Staravoitau\documents\visual studio 2015\Projects\LWWTest\LWWTest\bin\Debug\nunit.framework.dll
+C:\Users\Yahor_Staravoitau\documents\visual studio 2015\Projects\LWWTest\LWWTest\bin\Debug\nunit.framework.xml
+C:\Users\Yahor_Staravoitau\Documents\Visual Studio 2015\Projects\LWWTest\LWWTest\obj\Debug\LWWTest.csprojResolveAssemblyReference.cache
