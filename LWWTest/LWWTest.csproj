@@ -46,15 +46,28 @@
     <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <Private>False</Private>
     </Reference>
+    <Reference Include="Microsoft.VisualStudio.TestPlatform.TestFramework, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MSTest.TestFramework.1.0.8-rc2\lib\net45\Microsoft.VisualStudio.TestPlatform.TestFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MSTest.TestFramework.1.0.8-rc2\lib\net45\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="nunit.framework, Version=3.6.0.0, Culture=neutral, PublicKeyToken=2638cd05610744eb, processorArchitecture=MSIL">
       <HintPath>..\packages\NUnit.3.6.0\lib\net45\nunit.framework.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="System" />
+    <Reference Include="System.configuration" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.XML" />
     <Reference Include="WebDriver, Version=3.0.1.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\Selenium.WebDriver.3.0.1\lib\net40\WebDriver.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="WebDriver.Support, Version=3.0.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Selenium.Support.3.0.1\lib\net40\WebDriver.Support.dll</HintPath>
       <Private>True</Private>
     </Reference>
   </ItemGroup>
@@ -67,24 +80,32 @@
     <Otherwise />
   </Choose>
   <ItemGroup>
-    <Compile Include="AdvancedSearch.cs" />
-    <Compile Include="Data.Designer.cs">
+    <Compile Include="PageObject\AdvancedSearchPage.cs" />
+    <Compile Include="TestingData\Data.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Data.resx</DependentUpon>
     </Compile>
-    <Compile Include="Element.cs" />
-    <Compile Include="Extensions.cs" />
-    <Compile Include="Journal.cs" />
-    <Compile Include="Category.cs" />
-    <Compile Include="JournalTest.cs" />
-    <Compile Include="LoginPage.cs" />
-    <Compile Include="PageObject.cs" />
-    <Compile Include="ReadExcel.cs" />
-    <Compile Include="Singleton.cs" />
+    <Compile Include="Tests\AdvancedSearchTest.cs" />
+    <Compile Include="Tests\InitClass.cs" />
+    <Compile Include="Tests\LoginTest.cs" />
+    <Compile Include="Tests\SearchTest.cs" />
+    <Compile Include="Util\Element.cs" />
+    <Compile Include="TestingData\TestData.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TestData.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Util\XMLReader.cs" />
+    <Compile Include="Util\Journal.cs" />
+    <Compile Include="Util\Category.cs" />
+    <Compile Include="Tests\JournalTest.cs" />
+    <Compile Include="PageObject\LoginPage.cs" />
+    <Compile Include="PageObject\PageObject.cs" />
+    <Compile Include="Util\ExcelReader.cs" />
+    <Compile Include="PageObject\SearchResultsPage.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="AllJournalTest.cs" />
-    <Compile Include="WebDriver.cs" />
+    <Compile Include="Util\WebDriver.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config">
@@ -92,9 +113,13 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Data.resx">
+    <EmbeddedResource Include="TestingData\Data.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Data.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TestingData\TestData.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>TestData.Designer.cs</LastGenOutput>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
@@ -121,7 +146,7 @@
     <WCFMetadata Include="Service References\" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="JournalTestData.xml" />
+    <Content Include="TestingData\JournalTestData.xml" />
   </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">

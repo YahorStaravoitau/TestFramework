@@ -5,11 +5,11 @@ using LWWTest;
 
 namespace MSUnitTest
 {
+    [Ignore]
     [TestClass]
     public class MSUnitTest
     {
         private PageObject page = new PageObject();
-        private LoginPage login = new LoginPage();
 
         private static List<Journal> journals;
         private static Dictionary<string, Journal> dictionary = new Dictionary<string, Journal>();
@@ -39,7 +39,7 @@ namespace MSUnitTest
         {
             string key = (string)TestContext.DataRow["Data"];
             Journal journal = dictionary[key];
-            page.NavigateHere(journal.Name + "/");
+            page.NavigateHere($"{journal.Name}/");
             foreach (Category cat in journal.category)
             {
                 page.SetNaviLocator(cat.Name);
@@ -50,24 +50,6 @@ namespace MSUnitTest
                     page.SetMenuLocator(e.Name);
                 }
             }
-        }
-
-        [Ignore]
-        [TestMethod]
-        [DeploymentItem("MSUnitTest\\JournalTestData.xml")]
-        [DataSource("Microsoft.VisualStudio.TestTools.DataSource.XML",
-                   @"C:\Users\Yahor_Staravoitau\Documents\Visual Studio 2015\Projects\LWWTest\LWWTest\JournalTestData.xml", "Journal",
-                    DataAccessMethod.Sequential)]
-        public void MSUnitTestLogin()
-        {
-            string key = (string)TestContext.DataRow["Data"];
-            Journal journal = dictionary[key];
-            page.NavigateHere(journal.Name + "/");
-            page.GoToLoginPage();
-            login.EnterData("Yahor_Staravoitau", "password1");
-            login.ClickLogin();
-            page.LogOut();
-
         }
     }
 }
