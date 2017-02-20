@@ -1,0 +1,9 @@
+c:\users\yahor_staravoitau\documents\visual studio 2015\Projects\LinqToXML\LinqToXML\bin\Debug\LinqToXML.dll
+c:\users\yahor_staravoitau\documents\visual studio 2015\Projects\LinqToXML\LinqToXML\bin\Debug\LinqToXML.pdb
+c:\users\yahor_staravoitau\documents\visual studio 2015\Projects\LinqToXML\LinqToXML\bin\Debug\nunit.framework.dll
+c:\users\yahor_staravoitau\documents\visual studio 2015\Projects\LinqToXML\LinqToXML\bin\Debug\nunit.framework.xml
+c:\users\yahor_staravoitau\documents\visual studio 2015\Projects\LinqToXML\LinqToXML\obj\Debug\LinqToXML.csprojResolveAssemblyReference.cache
+c:\users\yahor_staravoitau\documents\visual studio 2015\Projects\LinqToXML\LinqToXML\obj\Debug\LinqToXML.dll
+c:\users\yahor_staravoitau\documents\visual studio 2015\Projects\LinqToXML\LinqToXML\obj\Debug\LinqToXML.pdb
+C:\Users\Yahor_Staravoitau\documents\visual studio 2015\Projects\LinqToXML\LinqToXML\obj\Debug\LinqToXML.Data.resources
+C:\Users\Yahor_Staravoitau\documents\visual studio 2015\Projects\LinqToXML\LinqToXML\obj\Debug\LinqToXML.csproj.GenerateResource.Cache
